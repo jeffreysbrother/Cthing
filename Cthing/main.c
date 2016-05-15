@@ -7,11 +7,12 @@ int main()
     printf("My age is %d, but I have %f dollars on my desk.\n", 32, 100.5);
     printf("My favorite girl is called %s, but I no time to imagine her now.\n", "Angelina");
     
-    //user input
-    //scanf("%s");
     
+    
+    //user input
     puts("this is not a pipe"); //not sure what the difference is between printf() and puts()
     puts("this is a line of text"); //it appears that puts() automatically inserts a newline character
+    
     
     
     //variables
@@ -21,10 +22,21 @@ int main()
     printf("the value of pi is approximately %f.\n", pi);
     
     int a = 120;
-    int b = 155;
+    int b = 100;
     int sum = a + b;
     
     printf("The sum of varibles a and b is %d\n", sum); //variables, addition, placeholders
+    
+    
+    
+    //if statements
+    if (b > 120) {
+        printf("Hi. The value within b is greater than a. Please enter your age \n");
+        scanf("%d", &age);
+        printf("Okay. The value within the age variable is %d\n", age);
+    } else {
+        printf("Hello! The value within b is less than a. See you later!\n");
+    }
     
     return 0;
 }
