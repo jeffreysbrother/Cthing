@@ -91,11 +91,19 @@ int main()
     
     //do while loop
     //this executes the code AND THEN checks the condition.
-    int i = 11;
-    do {
-        printf("The value of i is %d\n", i);
-        i++;
-    } while (i <= 10);
+//    int i = 11;
+//    do {
+//        printf("The value of i is %d\n", i);
+//        i++;
+//    } while (i <= 10);
+    
+    
+    
+    //for loop
+    //initialization, condition, increment
+    for (int i = 0; i <= 10; i++ ) {
+        printf("the value of i is equal to %d\n", i);
+    }
     
     
     return 0;
