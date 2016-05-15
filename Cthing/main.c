@@ -26,6 +26,13 @@ int ArraySum(int MyArray[], int size){
 }
 
 
+struct student {
+    int id;
+    char name[20];
+    int weight;
+};
+
+
 
 
 
@@ -238,6 +245,25 @@ int main()
     printf("strcpy is equal to %s \n", new_string);
     printf("strcat is equal to %s \n", string_one);
     printf("strlen is equal to %d \n", length_string1);
+    
+    //strcmp() is for string comparison. the string.h file is very important when working with strings.
+    
+    
+    
+    //Structures in C
+    //a collection of different variables grouped together logically
+    //the struct is treated as a data type
+    //the structure is defined above main()
+
+    //this is an instace of the student structure
+    struct student record1;
+    record1.id = 1;
+    strcpy(record1.name, "James");
+    record1.weight = 145;
+    
+    printf("id equals %d   name equals %s    weight equals %d \n", record1.id, record1.name, record1.weight);
+    
+    
     
     return 0;
 }
