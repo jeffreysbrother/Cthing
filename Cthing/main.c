@@ -16,6 +16,14 @@ int Product(int a, int b) {
     return(a * b);
 }
 
+int ArraySum(int MyArray[], int size){
+    int sum = 0;
+    for (int i = 0; i < 6; i++) {
+        sum += MyArray[i];
+    }
+    return sum;
+}
+
 
 
 
@@ -187,9 +195,24 @@ int main()
     
     
     //passing arrays to functions
+    int MyNumberArray[6] = {20,30,60,50,55,30};
+    int sum_of_array = ArraySum(MyNumberArray, 6);
+    
+    printf("Array Sum = %d \n", sum_of_array);
     
     
     
+    
+    //pointers
+    // a variable whose value is the address of another variable: a hexadecimal value
+    int val = 30;
+    printf("address of val = %x\n", &val);
+        //this will return something like: 5fbff7a8
+    
+    //declaration of a pointer uses an asterisk
+    int *pointer_p = &val;
+    printf("address of pointer variable = %x \n", pointer_p);
+    printf("value of pointer variable = %d \n", *pointer_p);
     
     return 0;
 }
