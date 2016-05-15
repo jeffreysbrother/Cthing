@@ -80,12 +80,23 @@ int main()
     
     
     
-    //while loops
-    int i = 0;
-    while (i <= 10) {
+    //while loop
+//    int i = 0;
+//    while (i <= 10) {
+//        printf("The value of i is %d\n", i);
+//        i++;
+//    }
+    
+    
+    
+    //do while loop
+    //this executes the code AND THEN checks the condition.
+    int i = 11;
+    do {
         printf("The value of i is %d\n", i);
         i++;
-    }
+    } while (i <= 10);
+    
     
     return 0;
 }
