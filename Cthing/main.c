@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//functions declared outside of main()
+//functions declared outside of main() ... if below main(), we must prototype the function (name it before, define it later)
 //void means we are not returning anything
 void pointlessFunction() {
     printf("this came out of a function, baby!\n");
+}
+
+void addition(int f, int g) {
+    int combination = f + g;
+    printf("the result is %d\n", combination);
 }
 
 
@@ -117,7 +122,7 @@ int main()
     
     pointlessFunction();
     
-
+    addition(500, 99);
     
     
     
