@@ -38,5 +38,15 @@ int main()
         printf("Hello! The value within b is less than a. See you later!\n");
     }
     
+    
+    
+    //ternary operator
+    int x = 12;
+    int y = 14;
+    int z;
+    
+    z = (x > y) ? x : y; //make z the value of the larger variable
+    printf("The value of z is %d\n", z);
+    
     return 0;
 }
