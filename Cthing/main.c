@@ -30,7 +30,8 @@ int main()
     
     
     //if statements
-    if (b > 120) {
+    if (b > 120)
+    {
         printf("Hi. The value within b is greater than a. Please enter your age \n");
         scanf("%d", &age);
         printf("Okay. The value within the age variable is %d\n", age);
@@ -47,6 +48,30 @@ int main()
     
     z = (x > y) ? x : y; //make z the value of the larger variable
     printf("The value of z is %d\n", z);
+    
+    
+    
+    //switch statements
+    //the "break" keyword prevents the next case from being executed
+    int marks = 40;
+    
+    switch(marks)
+    {
+        case 90:
+            printf("Excellent.\n");
+            break;
+        case 75:
+            printf("Pretty good!\n");
+            break;
+        case 60:
+            printf("Not excellent, bro.\n");
+            break;
+        case 40:
+            printf("Dude, you bonked that shit.\n");
+            break;
+        default:
+            printf("Grade unavailable.\n");
+    }
     
     return 0;
 }
