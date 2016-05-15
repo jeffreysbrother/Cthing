@@ -30,7 +30,9 @@ struct student {
     int id;
     char name[20];
     int weight;
-};
+} record;
+
+
 
 
 
@@ -256,12 +258,24 @@ int main()
     //the structure is defined above main()
 
     //this is an instace of the student structure
-    struct student record1;
-    record1.id = 1;
-    strcpy(record1.name, "James");
-    record1.weight = 145;
+//    struct student record1;
+    record.id = 1;
+    strcpy(record.name, "James");
+    record.weight = 145;
     
-    printf("id equals %d   name equals %s    weight equals %d \n", record1.id, record1.name, record1.weight);
+    printf("id equals %d   name equals %s    weight equals %d \n", record.id, record.name, record.weight);
+    
+//    struct student record2;
+    record.id = 2;
+    strcpy(record.name, "Jeffrey");
+    record.weight = 290;
+    
+    printf("id equals %d   name equals %s    weight equals %d \n", record.id, record.name, record.weight);
+    
+    
+    
+    //unions
+    
     
     
     
