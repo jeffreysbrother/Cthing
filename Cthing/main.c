@@ -12,6 +12,10 @@ void addition(int f, int g) {
     printf("the result is %d\n", combination);
 }
 
+int Product(int a, int b) {
+    return(a * b);
+}
+
 
 
 
@@ -124,6 +128,29 @@ int main()
     
     addition(500, 99);
     
+//    int f, g;
+//    printf("PLEASE ENTER TWO NUMBERS TO BE SUMMED\n");
+//    printf("number one here: \n");
+//    scanf("%d", &f);
+//    printf("number two here: \n");
+//    scanf("%d", &g);
+//    
+//    addition(f, g);
+    
+    
+    
+    //functions with return values
+    //we can then store the value returned into a variable
+    int f, g;
+    printf("PLEASE ENTER TWO NUMBERS TO BE MULTIPLIED\n");
+    printf("number one here: \n");
+    scanf("%d", &f);
+    printf("number two here: \n");
+    scanf("%d", &g);
+    
+    int prod;
+    prod = Product(f, g);
+    printf("the product = %d\n", prod);
     
     
     return 0;
