@@ -58,6 +58,11 @@ int main()
     switch(marks)
     {
         case 90:
+        case 89:
+        case 88:
+        case 87:
+        case 86:
+        case 85:
             printf("Excellent.\n");
             break;
         case 75:
@@ -71,6 +76,15 @@ int main()
             break;
         default:
             printf("Grade unavailable.\n");
+    }
+    
+    
+    
+    //while loops
+    int i = 0;
+    while (i <= 10) {
+        printf("The value of i is %d\n", i);
+        i++;
     }
     
     return 0;
