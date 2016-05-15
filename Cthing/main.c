@@ -163,9 +163,30 @@ int main()
     char charArray[5] = {'a', 'b', 'c', 'd', 'e'};
     printf("%s \n", charArray);
     
+    
+    
+    //arrays with for loops
     for(int i = 0; i < 4; i++) {
         printf("element[%d]=%d \n", i, stupidFuckingNumbers[i]);
     }
+    
+    
+    
+    //multidimensional arrays, using two for loops to iterate over the values
+    int multiArray[2][3] = {
+        {1, 3, 2},
+        {5, 6, 9}
+    };
+    
+    for(int i = 0; i < 2; i++) {
+        for(int j = 0; j < 3; j++) {
+            printf("multiArray[%d][%d] = %d \n", i, j, multiArray[i][j]);
+        }
+    }
+    
+    
+    
+    //passing arrays to functions
     
     
     
