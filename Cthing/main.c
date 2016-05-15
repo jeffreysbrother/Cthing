@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 //functions declared outside of main() ... if below main(), we must prototype the function (name it before, define it later)
 //void means we are not returning anything
@@ -213,6 +214,30 @@ int main()
     int *pointer_p = &val;
     printf("address of pointer variable = %x \n", pointer_p);
     printf("value of pointer variable = %d \n", *pointer_p);
+    
+    
+    
+    //strings
+    //a string is a single dimentional array of charaters which is terminated by a null character
+    char my_string[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+    
+    //a string can have a non-definite size
+    char my_other_string[] = "HELLO THERE";
+    
+    char new_string[20];
+    char string_one[12] = "butt";
+    char string_two[12] = "love";
+    printf("%s \n", my_string);
+    printf("%s \n", my_other_string);
+    
+    //can add a string header file to have access to more string functions
+    strcpy(new_string, my_other_string);
+    strcat(string_one, string_two);
+    int length_string1 = strlen(my_string);
+    
+    printf("strcpy is equal to %s \n", new_string);
+    printf("strcat is equal to %s \n", string_one);
+    printf("strlen is equal to %d \n", length_string1);
     
     return 0;
 }
