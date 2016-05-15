@@ -153,6 +153,23 @@ int main()
     printf("the product = %d\n", prod);
     
     
+    
+    //arrays in C
+    int stupidFuckingNumbers[4] = {20, 20, 60, 3};
+    int arrayValue = stupidFuckingNumbers[2];
+    printf("The value of this array at index 2 is %d\n", arrayValue);
+    // **not sure how to use string arrays ... tried earlier with no luck**
+    
+    char charArray[5] = {'a', 'b', 'c', 'd', 'e'};
+    printf("%s \n", charArray);
+    
+    for(int i = 0; i < 4; i++) {
+        printf("element[%d]=%d \n", i, stupidFuckingNumbers[i]);
+    }
+    
+    
+    
+    
     return 0;
 }
 
