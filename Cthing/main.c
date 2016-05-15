@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//functions declared outside of main()
+//void means we are not returning anything
+void pointlessFunction() {
+    printf("this came out of a function, baby!\n");
+}
+
+
+
+
+
 int main()
 {
     //placeholders
@@ -105,6 +115,30 @@ int main()
         printf("the value of i is equal to %d\n", i);
     }
     
+    pointlessFunction();
+    
+
+    
+    
     
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
