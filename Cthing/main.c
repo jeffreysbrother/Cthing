@@ -33,6 +33,10 @@ struct student {
 } record;
 
 
+union myUnion {
+    int funnyInt;
+    char funnyChar;
+};
 
 
 
@@ -275,7 +279,16 @@ int main()
     
     
     //unions
+    //works differently than structs
+    //memory mapping is different
+    //declaring a union has the size of a variable whose size is maximum
+    //members inside a union share the memory space...in a structure, they're located in different places.
+    //unions are used in embedded programs
+    union myUnion uni;
+    uni.funnyInt = 4;
+    uni.funnyChar = 9;
     
+    printf("%i \n", uni.funnyChar);
     
     
     
